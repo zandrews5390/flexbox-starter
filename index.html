@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CSS Flexbox</title>
+        <meta name="author" content="Jessica Barnett">
+        <meta name="description" content="Let's learn how to use CSS Flexbox to style containers in either the row or column direction.">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+        <!-- Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+        <!-- Stylesheets -->
+        <link href="styles.css" rel="stylesheet">
+
+        <!-- JavaScript -->
+        <script src="scripts.js" defer></script>
+    </head>
+
+    <body id="top">
+        <a href="#main" id="skip">Skip to Main Content</a>
+        <header id="top">
+            <h1>CSS Flexbox</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section id="starting">
+                <h2>Getting Started with CSS Flexbox</h2>
+                <p>There are some required properties for your parent container, as well as plenty of optional ones that you can use on the parents or children. Read the content below for more information and details.</p>
+                <div>
+                    <section>
+                        <h3>Flexbox First Steps</h3>
+                        <img src="images/fall-forest.jpg" alt="" width="640" height="853">
+                        <p>To make elements display using flexbox, you have to apply some styles to the container itself. First, tell the container to <code>display: flex;</code> and you should see a difference in your page right away. Remember, that the containers/parents are the elements holding the content items you want to style. On this page, we have a section for each topic, so each section is the parent of its content. The header is the parent of the h1 and nav, etc.</p>
+                    </section>
+        
+                    <section>
+                        <h3>Additional Container Styles</h3>
+                        <img src="images/fall-rain.jpg" alt="" width="640" height="960">
+                        <p>By default, the flex container will display its elements in a row, with each taking up part of that container's width. The <code>flex-direction</code> property allows you to tell the elements to display in a column instead of a row. The <code>flex-wrap</code> property will allow your content to take up multiple rows or columns, instead of just one.</p>
+                    </section>
+        
+                    <section>
+                        <h3>Styles for Flex Items</h3>
+                        <img src="images/fall-road.jpg" alt="" width="640" height="960">
+                        <p>The elements inside of a parent container displaying flex can also have styles added to control their size and arrangement, as well as how they can grow as the screen width changes. The <code>order</code> property allows you to control the order in which elements are displayed. The <code>flex-grow</code> property can be set to allow certain items to be larger if there is space. <code>flex-shrink</code> does the opposite of <code>flex-grow</code>. The <code>flex-basis</code> property allows you to define the size of an element before the other elements fill up the remaining space. <code>align-self</code> allows you to control alignment on a specific item so that it can differ from the others in the same container.</p>
+                    </section>
+        
+                    <section>
+                        <h3>Container Styles for Arranging Children</h3>
+                        <img src="images/pumpkin-display.jpg" alt="" width="640" height="853">
+                        <p>The way your content displays in the containers may not line up in the way you want, and there are some properties you can add to the parent container to help with that. The <code>justify-content</code> property controls alignment along the main axis. The <code>align-items</code> property controls alignment along the cross-axis. You can create space between your elements using the <code>gap</code> property.</p>
+                    </section>
+        
+                    <section>
+                        <h3>Unique Flexbox Powers</h3>
+                        <img src="images/fall-moon.jpg" alt="" width="640" height="960">
+                        <p>One of the things that flexbox can do is easily center-align a container both horizontally AND vertically in a container. Imagine a popup or modal window on a website. You'd likely want that to be perfectly centered in the screen no matter what size that screen is. Flexbox can do that!</p>
+                    </section>
+        
+                    <section>
+                        <h3>Additional Information</h3>
+                        <img src="images/fall-trees.jpg" alt="" width="640" height="958">
+                        <p>While flexbox can be used on its own for layout, usually you'll find this combined with CSS grid to control page layout and alignment of items inside of containers in a grid layout. Don't forget that you can test out the different flexbox properties with the dev tools as well! That can make it easy to see how the different settings will change your layout.</p>
+                    </section>
+                </div>
+            </section>
+        
+            <section id="more-flex">
+                <h2>Another Layout with Flexbox</h2>
+                <p>You aren't restricted to using flexbox for a container full of large items. The properties allow you to easily control details in your layouts.</p>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-html5" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                        <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                    </svg>
+        
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-css3" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                        <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                    </svg>
+        
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-javascript" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                        <path d="M7.5 8h3v8l-2 -1" />
+                        <path d="M16.5 8h-2.5a0.5 .5 0 0 0 -.5 .5v3a0.5 .5 0 0 0 .5 .5h1.423a0.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" />
+                    </svg>
+                </div>
+            </section>
+        
+            <section id="spacing">
+                <h2>The Horizontal &amp; Vertical Spacing Trick</h2>
+                <p>I have written some JavaScript for you that will make a popup appear on the page. You can click on the button below to see it and should notice that the alignment isn't great. We can easily fix that with flexbox.</p>
+                <button id="viewModal">View the Popup</button>
+            </section>
+        
+            <section id="colors">
+                <h2>More Flexbox Practice</h2>
+                <p>These are the colors from the theme I used on this page. Try some different flexbox settings on this section to see how it changes the way they look on the page.</p>
+                <div id="boxes">
+                    <div id="box1"><p><span>plum: #301B20</span></p></div>
+                    <div id="box2"><p><span>tan: #855F3A</span></p></div>
+                    <div id="box3"><p><span>beige: #A88D5E</span></p></div>
+                    <div id="box4"><p><span>mist: #B2C5BD</span></p></div>
+                    <div id="box5"><p><span>white: #EDEFE8</span></p></div>
+                </div>
+            </section>
+        
+        </main>
+                
+        <footer>
+            <p>Copyright &copy; 2024 - Prof. Barnett</p>
+            <p>For Educational Purposes Only</p>
+        </footer>
+                
+        <div id="modal" class="hidden">
+            <div>
+                <button id="closeModal" aria-label="close the modal window">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-x" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                        <path d="M10 10l4 4m0 -4l-4 4" />
+                    </svg>
+                </button>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-alert-triangle" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 9v2m0 4v.01" />
+                    <path d="M5 19h14a2 2 0 0 0 1.84 -2.75l-7.1 -12.25a2 2 0 0 0 -3.5 0l-7.1 12.25a2 2 0 0 0 1.75 2.75" />
+                </svg>
+                <p>This is our popup window! You can close it by clicking the "X" in the upper-right corner.</p>
+            </div>
+        </div>
+                
+                
+                
+        <!--  
+            Credit for the images used below:
+        
+            Pumpkin Display: Photo by <a href="https://unsplash.com/@jontyson?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jon Tyson</a> on <a href="https://unsplash.com/photos/round-brown-and-white-decor-lot-DwQVcudRcS8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        
+            Fall Trees: Photo by <a href="https://unsplash.com/@eberhardgross?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">eberhard 🖐 grossgasteiger</a> on <a href="https://unsplash.com/photos/brown-leafed-trees-wUWP53W7KbY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+            Fall Rain: Photo by <a href="https://unsplash.com/@mjmccleary?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mitchell  McCleary</a> on <a href="https://unsplash.com/photos/water-ripple-with-maple-leaves-Sffn3x3u6mo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+            Fall Road: Photo by <a href="https://unsplash.com/@quentin?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">quentin</a> on <a href="https://unsplash.com/photos/road-between-yellow-leaf-trees-at-daytime-zwzeorQPepo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+            Fall Moon: Photo by <a href="https://unsplash.com/@adinc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Altınay Dinç</a> on <a href="https://unsplash.com/photos/full-moon-and-clouds-LluELtL5mK4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+            Fall Forest: Photo by <a href="https://unsplash.com/@davidkovalenkoo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">David Kovalenko</a> on <a href="https://unsplash.com/photos/low-angle-of-forest-at-daytime-rkkr6-2I4sg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        
+        -->
+    </body>
+</html>
